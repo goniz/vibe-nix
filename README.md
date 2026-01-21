@@ -1,4 +1,4 @@
-# opencode-cli
+# vibe-nix
 
 A vibe-coded CLI that uses the OpenCode SDK to manage Nix packages with your favorite LLM.
 
