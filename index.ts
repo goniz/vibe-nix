@@ -98,11 +98,13 @@ try {
           continue
         }
         if (part.type === "text") {
+          const prev = seenText.get(part.id) ?? 0
           if (delta) {
             process.stdout.write(delta)
+            const next = part.text ? part.text.length : prev + delta.length
+            seenText.set(part.id, next)
             continue
           }
-          const prev = seenText.get(part.id) ?? 0
           if (part.text.length > prev) {
             process.stdout.write(part.text.slice(prev))
             seenText.set(part.id, part.text.length)
