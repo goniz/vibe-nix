@@ -14,15 +14,21 @@ bun run index.ts install ripgrep
 ```
 
 ```text
-Server running at http://127.0.0.1:32943
-The user asked to install the package named "ripgrep".
-Prefer nix profile add nixpkgs#<name> (avoid nix-env). Permissions: bash(nix:allow) Edit(*.nix:allow) Else(block).
-[tool running] {"command":"nix profile add nixpkgs#ripgrep","description":"Install ripgrep package via nix profile"}
+----------------------------------------------------------------
+nix-cli nix automation
+Command: install ripgrep
+----------------------------------------------------------------
+server http://127.0.0.1:32943
+session ses_41dd7c92affewLK3x61ONtBpZc
+
+assistant
+----------------------------------------------------------------
+tool done Install ripgrep package via nix profile
 this path will be fetched (1.5 MiB download, 6.4 MiB unpacked):
   /nix/store/0qh46n4bqwci1dli1bjqkavvzmdw87x3-ripgrep-15.1.0
 copying path '/nix/store/0qh46n4bqwci1dli1bjqkavvzmdw87x3-ripgrep-15.1.0' from 'https://cache.nixos.org'...
 
-Installed ripgrep-15.1.0 successfully.
+Installed `ripgrep` (version 15.1.0) via `nix profile add nixpkgs#ripgrep`.
 ```
 
 To install dependencies:
